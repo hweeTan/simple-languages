@@ -1,6 +1,6 @@
 {
   "name": "simple-languages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny package for switching languages",
   "main": "src/createLanguages.js",
   "repository": "https://github.com/hweeTan/languages.git",
