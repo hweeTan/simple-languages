@@ -2,7 +2,7 @@
   "name": "simple-languages",
   "version": "1.0.1",
   "description": "A tiny package for switching languages",
-  "main": "src/createLanguages.js",
+  "main": "createLanguages.js",
   "repository": "https://github.com/hweeTan/languages.git",
   "author": "Huy Tran <hwee.haha@gmail.com>",
   "license": "MIT",

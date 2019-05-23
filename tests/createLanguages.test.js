@@ -1,4 +1,4 @@
-const createLanguages = require('../src/createLanguages')
+const createLanguages = require('../createLanguages')
 
 describe('Languages should be create registered and then updated correctly', () => {
   test('init two languages', () => {
