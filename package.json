@@ -1,5 +1,5 @@
 {
-  "name": "languages",
+  "name": "simple-languages",
   "version": "1.0.0",
   "description": "A tiny package for switching languages",
   "main": "src/createLanguages.js",
