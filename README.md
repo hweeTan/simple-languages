@@ -1,6 +1,6 @@
 # Simple Languages
 
-A small wrapper for switching languages.
+A small wrapper for switching languages. Inspired by [react-localization](https://github.com/stefalda/react-localization) and rewritten using [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) for a much smaller code base (50 ~ 80 lines of codes).
 
 ## Installation
 
@@ -22,7 +22,7 @@ const Languages = createLanguages()
 Languages.lang = 'vi'
 
 /* set the language data, it can be overwrite anytime
- * please note that the word "formatString", "lang" and "data" are reserved
+ * please note that the words "formatString", "lang" and "data" are reserved
  */
 Languages.data = {
   en: {
@@ -64,3 +64,9 @@ console.log(Languages.formatString(Languages.hello, 'John', 'David')) // => Hell
 ```js
 import formatString from 'simple-languages/formatString-react'
 ```
+
+## Caveats
+
+Since this plugin using Proxy which is only supported by modern browsers. [https://caniuse.com/#search=proxy](https://caniuse.com/#search=proxy).
+
+However, a [polyfill](https://github.com/GoogleChrome/proxy-polyfill) can be used to support IE9+.
