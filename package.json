@@ -11,7 +11,9 @@
     "localization",
     "internationalization",
     "languages",
-    "javascript"
+    "javascript",
+    "simple-languages",
+    "simple"
   ],
   "scripts": {
     "test": "jest"
