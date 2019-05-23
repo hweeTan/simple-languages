@@ -1,15 +1,17 @@
-# Languages
+# Simple Languages
 
 A small wrapper for switching languages.
 
 ## Installation
 
-`npm install --save react-localization`
+`npm install --save simple-languages`
+or
+`yarn add simple-languages`
 
 ## Usage
 
 ```js
-import createLanguages from 'languages'
+import createLanguages from 'simple-languages'
 
 // create the Languages object
 const Languages = createLanguages()
