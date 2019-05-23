@@ -1,10 +1,12 @@
-#Languages
+# Languages
+
 A small wrapper for switching languages.
 
-##Installation
+## Installation
+
 `npm install --save react-localization`
 
-##Usage
+## Usage
 
 ```js
 import createLanguages from 'languages'
