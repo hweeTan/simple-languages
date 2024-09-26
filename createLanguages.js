@@ -2,7 +2,7 @@ const createLanguages = () => {
   return new Proxy(
     {
       lang: 'en',
-      data: {}
+      data: {},
     },
     {
       get(obj, key) {
@@ -13,9 +13,9 @@ const createLanguages = () => {
         return obj.data[obj.lang] && obj.data[obj.lang][key]
           ? obj.data[obj.lang][key]
           : `missing translation for "${key}" in "${obj.lang}"`
-      }
-    }
+      },
+    },
   )
 }
 
-module.exports = createLanguages
+export default createLanguages

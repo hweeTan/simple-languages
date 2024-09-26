@@ -1,13 +1,13 @@
-const createLanguages = require('../createLanguages')
+import createLanguages from '../createLanguages'
 
 describe('Languages should be create registered and then updated correctly', () => {
   test('init two languages', () => {
     const en = {
-      hello: 'Hello'
+      hello: 'Hello',
     }
 
     const vi = {
-      hello: 'Xin chào'
+      hello: 'Xin chào',
     }
 
     const Languages = createLanguages()
@@ -16,7 +16,7 @@ describe('Languages should be create registered and then updated correctly', () 
 
     expect(Languages.hello).toEqual('Hello')
     expect(Languages.goodbye).toEqual(
-      'missing translation for "goodbye" in "en"'
+      'missing translation for "goodbye" in "en"',
     )
 
     Languages.lang = 'vi'

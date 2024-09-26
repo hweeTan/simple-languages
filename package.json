@@ -1,11 +1,12 @@
 {
   "name": "simple-languages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tiny package for switching languages",
-  "main": "createLanguages.js",
   "repository": "https://github.com/hweeTan/languages.git",
   "author": "Huy Tran <hwee.haha@gmail.com>",
   "license": "MIT",
+  "type": "module",
+  "module": "./createLanguages.js",
   "keywords": [
     "react",
     "localization",
@@ -16,13 +17,12 @@
     "simple"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   },
-  "dependencies": {
-    "react": "^16.8.6"
+  "peerDependencies": {
+    "react": ">=18"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0"
+    "jest": "^29.7.0"
   }
 }

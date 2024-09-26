@@ -3,12 +3,12 @@ const placeholderRegex = /(\{[\d|\w]+\})/
 const formatString = (str, ...valuesForPlaceholders) =>
   str
     .split(placeholderRegex)
-    .filter(textPart => !!textPart)
-    .map(textPart =>
+    .filter((textPart) => !!textPart)
+    .map((textPart) =>
       textPart.match(placeholderRegex)
         ? valuesForPlaceholders[textPart.slice(1, -1)]
-        : textPart
+        : textPart,
     )
     .join('')
 
-module.exports = formatString
+export default formatString
